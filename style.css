@@ -1,0 +1,510 @@
+:root {
+    --fontePadrao: Verdana;
+    --color1: #F3C61F;
+    --color2: #514988;
+    --color3: #E33881;
+    --color4: #ffffff;
+    --headerBackground: #FFD900;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--headerBackground);
+    padding: 1% 4%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    width: 42%;
+    background-color: var(--color2);
+    color: var(--color4);
+    text-align: center;
+    padding: 2% 4%;
+}
+
+article h1 {
+    margin: 0;
+    color: var(--color1);
+    font-family: var(--fontePadrao);
+    font-size: 425%;
+    font-style: normal;
+    font-weight: 700;
+}
+
+article h2 {
+    font-family: var(--fontePadrao);
+    font-size: 200%;
+    margin-top: 5%;
+}
+
+article p {
+    font-family: var(--fontePadrao);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 175%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+aside {
+    width: 58%;
+    text-align: center;
+    padding: 1%;
+}
+
+aside h1 {
+    font-family: var(--fontePadrao);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%;
+    color: var(--color3);
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+#Timer div {
+    display: flex;
+}
+
+#Timer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+#Timer h1 {
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-family: var(--fontePadrao);
+    color: var(--color2);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 400%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 4%;
+}
+
+#Card h1 {
+    font-family: var(--fontePadrao);
+    color: var(--color1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 170%;
+}
+
+#Button {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+#Button button {
+    background: var(--color2);
+    color: var(--color4);
+    border-radius: 20px;
+    border: 0;
+    width: 70%;
+    height: 9rem;
+    font-family: var(--fontePadrao);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 250%;
+    cursor: pointer;
+}
+
+#Button button:hover {
+    background-color: var(--color1);
+    
+}
+
+.card-highLight{
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+@media (max-width : 480px){
+
+    header{
+        text-align: center;
+    }
+
+    header img{
+        width: 60%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+        padding: 6% 0;
+    }
+
+    article p {
+        font-size: 75%;
+    }
+
+    article h1 {
+        font-size: 190%;
+    }
+
+    article h2 {
+        font-size: 100%;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside h1 {
+        font-size: 75%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0 4%;
+    }
+
+    #Timer h1 {
+        font-size: 180%;
+    }
+
+    #Card h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    footer img{
+        width: 49%;
+    }
+
+    #Button button {
+        width: 100%;
+        font-size: 140%;
+    }
+}
+
+@media (min-width : 481px) and (max-width : 768px){
+
+    header{
+        text-align: center;
+    }
+
+    header img{
+        width: 60%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+        padding: 6% 0;
+    }
+
+    article p {
+        font-size: 115%;
+    }
+
+    article h1 {
+        font-size: 295%;
+    }
+
+    article h2 {
+        font-size: 135%;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside h1 {
+        font-size: 75%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0 4%;
+    }
+
+    #Timer h1 {
+        font-size: 180%;
+    }
+
+    #Card h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    footer img{
+        width: 49%;
+    }
+
+    #Button button {
+        width: 100%;
+        font-size: 140%;
+    }
+}
+
+@media (min-width : 769px) and (max-width : 840px){
+
+    header img {
+        width: 15%;
+    }
+
+    article h1 {
+        font-size: 193%;
+    }
+
+    article h2 {
+        font-size: 70%;
+    }
+
+    article p {
+        font-size: 79%;
+    }
+
+    #Timer h1 {
+        font-size: 200%;
+    }
+
+    aside h1 {
+        font-size: 90%;
+    }
+
+    #Card h1 {
+        font-size: 81%;
+    }
+
+    footer img{
+        width: 22%;
+    }
+
+    #Card {
+        width: 52%;
+    }
+
+    #Button button {
+        height: 4rem;
+        font-size: 110%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width : 841px) and (max-width : 1024px){
+
+    header img {
+        width: 15%;
+    }
+
+    article {
+        padding: 2%;
+    }
+
+    article h1 {
+        font-size: 221%;
+    }
+
+    article h2 {
+        font-size: 95%;
+    }
+
+    article p {
+        font-size: 90%;
+    }
+
+    #Timer h1 {
+        font-size: 200%;
+    }
+
+    aside h1 {
+        font-size: 110%;
+    }
+
+    #Card h1 {
+        font-size: 88%;
+    }
+
+    footer img{
+        width: 22%;
+    }
+
+    #Card {
+        width: 52%;
+    }
+
+    #Button button {
+        height: 4rem;
+        font-size: 110%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width : 1025px) and (max-width: 1200px) {
+
+    header img {
+        width: 13%;
+    }
+
+    article {
+        padding: 2%;
+    }
+
+    article h1 {
+        font-size: 269%;
+    }
+
+    article h2 {
+        font-size: 120%;
+    }
+
+    article p {
+        font-size: 110%;
+    }
+
+    #Timer h1 {
+        font-size: 295%;
+    }
+
+    aside h1 {
+        font-size: 135%;
+    }
+
+    #Card h1 {
+        font-size: 108%;
+    }
+
+    footer img{
+        width: 22%;
+    }
+
+    #Card {
+        width: 52%;
+    }
+
+    #Button button {
+        height: 5rem;
+        font-size: 170%;
+        border-radius: 10px;
+    } 
+
+}
+
+@media (min-width : 1201px) and (max-width: 1440px) {
+
+    header img {
+        width: 13%;
+    }
+
+    article {
+        padding: 2%;
+    }
+
+    article h1 {
+        font-size: 315%;
+    }
+
+    article h2 {
+        font-size: 140%;
+    }
+
+    article p {
+        font-size: 117%;
+    }
+
+    #Timer h1 {
+        font-size: 318%;
+    }
+
+    aside h1 {
+        font-size: 153%;
+    }
+
+    #Card h1 {
+        font-size: 126%;
+    }
+
+    footer img{
+        width: 22%;
+    }
+
+    #Card {
+        width: 52%;
+    }
+
+    #Button button {
+        height: 6rem;
+        font-size: 210%;
+        border-radius: 10px;
+    } 
+
+}
+
+@media (min-width : 1441px) and (max-width: 1692px) {
+
+    header img {
+        width: 15%;
+    }
+
+    article {
+        padding: 3%;
+    }
+
+    article h1 {
+        font-size: 370%;
+    }
+
+    article h2 {
+        font-size: 140%;
+    }
+
+    article p {
+        font-size: 152%;
+    }
+
+    #Timer h1 {
+        font-size: 378%;
+    }
+
+    aside h1 {
+        font-size: 180%;
+    }
+
+    #Card h1 {
+        font-size: 151%;
+    }
+
+    footer img{
+        width: 23%;
+    }
+
+    #Card {
+        width: 52%;
+    }
+
+    #Button button {
+        height: 7rem;
+        font-size: 210%;
+        border-radius: 10px;
+    } 
+
+}
